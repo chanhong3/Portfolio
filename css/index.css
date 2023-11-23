@@ -1,0 +1,28 @@
+#wrap { width: 100%; max-width: 1920px;}
+.clear {clear: both;}
+
+/* header */
+header{transition: all 1s; height: 120px; background-color: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; width: 100%; overflow: hidden;}
+header .logo{position: relative;  height: 60px; display: flex; justify-content: center; align-items: center;}
+header .logo img{position: absolute; height: 80%;}
+header .menu .menu_list{height: 60px; display: flex; justify-content: center; align-items: center;}
+header .menu .menu_list li{padding: 0 40px;}
+header.over{background-color: white;}
+header.over .menu_list a{color: black;}
+
+a{color: white; text-decoration: none;}
+a:hover{color: red !important;}
+section{height: 100vh;background-color: #F1F3F2;}
+section:nth-child(even){background-color: #F1F3F2;}
+/*짝수는 even 홀수는 */
+
+#sec_1{width: 100%;}
+#sec_1 img{width: 100%;}
+#sec_2{width: 100%; display: flex; justify-content: center; align-items: center;}
+#sec_2 p{font-size: calc(100vw * 24 / 1920);}
+#sec_4{width: 100%;}
+#sec_4 img{width: 100%;}
+/* footer */
+footer{width: 100%; height: calc(100vw * 200 / 1920); background-color: #F1F3F2; border-top: solid 2px #e3e3e3; text-align: center; z-index: 2;}
+footer h4{margin-top: calc(100vw * 50 / 1920); font-size: calc(100vw * 24 / 1920);}
+footer p{margin-top: calc(100vw * 20 / 1920); font-size: calc(100vw * 16 / 1920);}
