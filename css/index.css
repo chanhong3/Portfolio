@@ -1,0 +1,125 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+/* font */
+.pretendard {font-family: "Pretendard Variable";}
+
+/* public */
+body {background-color: #F1F3F2; color: #404042;}
+#wrap {width: 100%; max-width: 1920px;}
+.clear {clear: both;}
+a{color: #404042;}
+
+/* 스크롤바 숨기기 */
+body {scrollbar-width: thin;}
+body::-webkit-scrollbar { width: 0em;}
+body::-webkit-scrollbar-thumb {background-color: transparent;}
+
+/* intro */
+.loader {position: fixed; width: 100%; height: 100vh; background: #F1F3F2; z-index: 2; overflow: hidden; z-index: 60;}
+.loader .intro {position: absolute; top: calc(100vw * 245 / 1920); right: 0;}
+.loader .intro .title{font-size: calc(100vw * 96 / 1920); font-weight: 800; text-align: left; line-height: calc(100vw * 80 / 1920); margin-bottom: calc(100vw * 18 / 1920);}
+.loader .intro .date{font-size: calc(100vw * 32 / 1920); font-weight: 400;}
+.loader .intro .line{height: calc(100vw * 18 / 1920); width: calc(100vw * 672 / 1920); border-bottom: solid calc(100vw * 2 / 1920) #404042; margin-bottom: calc(100vw * 18 / 1920);}
+.loader .intro .name{font-size: calc(100vw * 32 / 1920); font-weight: 400; letter-spacing: 0.3em;}
+
+/* header */
+header{position: fixed; bottom: calc(100vw * 20 / 1920); width: 100%; display: flex; justify-content: center; opacity: 1; transition: opacity 0.3s ease-in-out; z-index: 10;}
+#header.hidden { opacity: 0;}
+header .menu{background-color: rgba(0, 0, 0, 0.1); backdrop-filter: blur(20px); border-radius: calc(100vw * 20 / 1920); width: calc(100vw  * 665 / 1920); display: flex; justify-content: center; align-items: center; font-size: calc(100vw * 18 / 1920); font-weight: 700;}
+header .menu span{font-size: calc(100vw * 12 / 1920); font-weight: 700;}
+header .menu li{padding: calc(100vw * 16 / 1920) calc(100vw * 30 / 1920); text-align: left; filter: invert(50%);}
+header .menu li a{position: relative; color: #404042;}
+header .menu li a::after {content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: calc(100vw * 2 / 1920); background-color: #404042; transform: scaleX(0); transition: transform 0.3s ease-in-out;}
+header .menu li a:hover::after {transform: scaleX(1);}
+
+/* home */
+#home{position: relative; width: 100%; height: calc(100vw * 1080 / 1920); padding: 0 calc(100vw * 200 / 1920);}
+#home .sub{position: absolute; top: calc(100vw * 280 / 1920); font-size: calc(100vw * 48 / 1920); font-weight: 500;}
+#home .title{position: absolute; top: calc(100vw * 327 / 1920); font-size: calc(100vw * 128 / 1920); font-weight: 900;}
+#home .text{position: absolute; top: calc(100vw * 537 / 1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; line-height: calc(100vw * 29 / 1920);}
+#home .text span{font-weight: 800;}
+#home .vertical{position: absolute; top: calc(100vw * 460 / 1920); right: calc(100vw * 140 / 1920);}
+#home .vertical .line{height: calc(100vw * 240 / 1920); width: 0; margin-left: calc(100vw * 65 / 1920); border-left: solid calc(100vw * 2 / 1920) #404042;}
+#home .vertical .up{margin-bottom: calc(100vw * 70 / 1920); transform: rotate(90deg); font-size: calc(100vw * 20 / 1920); font-weight: 400; }
+#home .vertical .down{margin-top: calc(100vw * 70 / 1920); transform: rotate(90deg); font-size: calc(100vw * 20 / 1920); font-weight: 400;}
+
+/* introduction */
+#introduction{position: relative; width: 100%; height: calc(100vw * 2670 / 1920); padding: 0 calc(100vw * 200 / 1920);}
+#introduction .title{position: absolute; top: calc(100vw * 400 / 1920); font-size: calc(100vw * 80 /1920); font-weight: 300;}
+#introduction .title span{font-weight: 700; line-height: calc(100vw * 100 / 1920);}
+#introduction .title .line{position: absolute; left: calc(100vw * -200 / 1920); height: calc(100vw * 20 / 1920); width: calc(100vw * 672 / 1920); border-bottom: solid calc(100vw * 2 / 1920) #404042;}
+
+#introduction .profile1{position: absolute; top: calc(100vw * 740 / 1920);}
+#introduction .profile1 .image img{width: calc(100vw * 500 / 1920);}
+#introduction .profile1 .name p{margin-top: calc(100vw * 50 / 1920); font-size: calc(100vw * 36 / 1920); font-weight: 700;}
+#introduction .profile1 .line{left: calc(100vw * 0 / 1920); height: calc(100vw * 12 / 1920); width: calc(100vw * 94 / 1920); border-bottom: solid calc(100vw * 2 / 1920);}
+#introduction .profile1 ul{margin-top: calc(100vw * 50 / 1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; line-height: calc(100vw * 32 / 1920);}
+
+#introduction .profile2{position: absolute; top: calc(100vw * 740 / 1920); left: calc(100vw * 960 / 1920);}
+#introduction .profile2 .title2 p{font-size: calc(100vw * 36 / 1920); font-weight: 700;}
+#introduction .profile2 .title2 p span{margin-left: calc(100vw * 14 /1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; color: #98999A;}
+#introduction .profile2 .educational{display: flex;}
+#introduction .profile2 .educational .school{margin-top: calc(100vw * 50 / 1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; line-height: calc(100vw * 29 / 1920); margin-right: calc(100vw * 30 / 1920);}
+#introduction .profile2 .educational .department{margin-top: calc(100vw * 50 / 1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; line-height: calc(100vw * 29 / 1920);}
+
+#introduction .profile3{position: absolute; top: calc(100vw * 1120 / 1920); left: calc(100vw * 960 / 1920);}
+#introduction .profile3 .title3 p{font-size: calc(100vw * 36 / 1920); font-weight: 700;}
+#introduction .profile3 .title3 p span{margin-left: calc(100vw * 14 /1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; color: #98999A;}
+#introduction .profile3 .skills{display: flex;}
+#introduction .profile3 .skills .sub{margin: calc(100vw * 50 /1920) 0 calc(100vw * 30 /1920) 0; font-size: calc(100vw * 24 / 1920);  font-weight: 700;}
+#introduction .profile3 .skills ul{margin-right: calc(100vw * 75 / 1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; line-height: calc(100vw * 29 / 1920);}
+
+#introduction .profile4{position: absolute; top: calc(100vw * 1620 / 1920); left: calc(100vw * 960 / 1920);}
+#introduction .profile4 .title4 p{font-size: calc(100vw * 36 / 1920); font-weight: 700;}
+#introduction .profile4 .title4 p span{margin-left: calc(100vw * 14 /1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; color: #98999A;}
+#introduction .profile4 .qualification ul{margin-top: calc(100vw * 50 / 1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; line-height: calc(100vw * 29 / 1920);}
+
+#introduction .profile5{position: absolute; top: calc(100vw * 2065 / 1920); left: calc(100vw * 960 / 1920);}
+#introduction .profile5 .title5 p{font-size: calc(100vw * 36 / 1920); font-weight: 700;}
+#introduction .profile5 .title5 p span{margin-left: calc(100vw * 14 /1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; color: #98999A;}
+#introduction .profile5 .career .work .sub{margin-bottom: calc(100vw * 30 / 1920);}
+#introduction .profile5 .career .work .sub .company{font-size: calc(100vw * 24 / 1920); font-weight: 700; margin-right: calc(100vw * 30 / 1920);}
+#introduction .profile5 .career ul{margin-top: calc(100vw * 50 / 1920); font-size: calc(100vw * 24 / 1920); font-weight: 400; line-height: calc(100vw * 29 / 1920);}
+
+/* directionality */
+#directionality{position: relative; width: 100%; height: calc(100vw * 2200 / 1920); padding: 0 calc(100vw * 200 / 1920); background-color: #404042; color: #F1F3F2; }
+#directionality .cover .bg{position: absolute; width: 100%; height: calc(100vw * 1080 /1920); left: 0; top: 0; background-image: url(../img/directionality_bg.png); background-size: 100%; background-repeat: no-repeat;}
+#directionality .cover .gradient{position: absolute; left: 0; top: calc(100vw * 321 / 1920); width: 100%; height: calc(100vw * 760 / 1920); background: linear-gradient(180deg, rgba(64, 64, 66, 0) 0%, #404042 100%);}
+#directionality .title{position: absolute; top: calc(100vw * 200 / 1920); right: calc(100vw * 200 /1920); font-size: calc(100vw * 80 /1920); font-weight: 300;}
+#directionality .title span{font-weight: 700; line-height: calc(100vw * 100 / 1920);}
+#directionality .title .line{position: absolute; right: calc(100vw * -200 /1920); height: calc(100vw * 20 / 1920); width: calc(100vw * 653 / 1920); border-bottom: solid calc(100vw * 2 / 1920) #F1F3F2;}
+
+#directionality .motive{position: absolute; top: calc(100vw * 690 / 1920);}
+#directionality .motive .sub{font-size: calc(100vw * 36 / 1920); font-weight: 700;}
+#directionality .motive .line{height: calc(100vw * 12 / 1920); width: calc(100vw * 63 / 1920); border-bottom: solid calc(100vw * 2 / 1920) #F1F3F2; margin-bottom: calc(100vw * 50 / 1920);}
+#directionality .motive .text{font-size: calc(100vw * 24 / 1920); font-weight: 300; line-height: calc(100vw * 29 / 1920);}
+
+#directionality .goals{position: absolute; top: calc(100vw * 1340 / 1920); display: flex;}
+#directionality .goals img{width: calc(100vw * 600 / 1920);}
+#directionality .goals .goals_text{ margin-left: calc(100vw * 160 / 1920); margin-top: calc(100vw * 286 / 1920);}
+#directionality .goals .sub{font-size: calc(100vw * 36 / 1920); font-weight: 700;}
+#directionality .goals .line{height: calc(100vw * 12 / 1920); width: calc(100vw * 164 / 1920); border-bottom: solid calc(100vw * 2 / 1920) #F1F3F2; margin-bottom: calc(100vw * 50 / 1920);}
+#directionality .goals .text{font-size: calc(100vw * 22 / 1920); font-weight: 300; line-height: calc(100vw * 29 / 1920);}
+
+/* product */
+#product{position: relative; width: 100%; height: calc(100vw * 2340 / 1920); padding: 0 calc(100vw * 200 / 1920); }
+#product .title{position: absolute; top: calc(100vw * 400 / 1920); font-size: calc(100vw * 80 /1920); font-weight: 300;}
+#product .title span{font-weight: 700; line-height: calc(100vw * 100 / 1920);}
+#product .title .line{position: absolute; left: calc(100vw * -200 / 1920); height: calc(100vw * 20 / 1920); width: calc(100vw * 723 / 1920); border-bottom: solid calc(100vw * 2 / 1920) #404042;}
+
+#product .img_box{position: absolute; top: calc(100vw * 680 / 1920); width: calc(100vw * 1520 / 1920); height: calc(100vw * 1032 / 1920);}
+#product .img_box p{font-size: calc(100vw * 36 / 1920); font-weight: 700; text-align: center; margin-bottom: calc(100vw * 60 / 1920);}
+#product .img_box ul{ display: flex;}
+#product .img_box ul li img{ width: 100%;}
+#product .img_box .btn{width: 100%; text-align: center;}
+#product .img_box button {margin-top: calc(100vw * 110 / 1920); width: calc(100vw * 100 / 1920); height: calc(100vw * 40 / 1920); background-color: #F1F3F2; color: #404042; border: calc(100vw * 1 / 1920) solid #404042; font-size: calc(100vw * 18 / 1920); font-weight: 400; transition: background-color 0.3s ease, color 0.3s ease;}
+#product .img_box button:hover {background-color: #DFDFDF; color: #404042;}
+
+/* footer */
+footer{position: relative; width: 100%; height: calc(100vw * 1080 /1920); background-image: url(../img/footer_bg.png); background-size: 100%; background-repeat: no-repeat;}
+footer .end{position: absolute; width: 100%;}
+footer .end p{margin-top: calc(100vw * 460 / 1920); width: 100%; font-size: calc(100vw * 64 /1920); font-weight: 600; text-align: center; margin-bottom: calc(100vw * 0 / 1920);}
+footer .end .line{width: calc(100vw * 1200 / 1920); height: calc(100vw * 5 / 1920); margin: 0 auto; background-color: #404042; border-radius: 100%; filter: blur(1px);}
+footer .icon{position: absolute; top: calc(100vw * 680 / 1920); width: 100%; display: flex; justify-content: center;}
+footer .icon img{width: calc(100vw * 60 / 1920); margin: 0 calc(100vw * 20 / 1920);}
+footer .text{position: absolute; top: calc(100vw * 770 / 1920); width: 100%; text-align: center; font-size: calc(100vw * 24 / 1920); font-weight: 400;}

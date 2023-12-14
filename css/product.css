@@ -1,0 +1,28 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+/* font */
+.pretendard {font-family: "Pretendard Variable";}
+
+/* public */
+body {background-color: #F1F3F2; color: #404042;}
+#wrap {width: 100%; max-width: 1920px;}
+.clear {clear: both;}
+a{color: #404042;}
+
+/* 스크롤바 숨기기 */
+body {scrollbar-width: thin;}
+body::-webkit-scrollbar { width: 0em;}
+body::-webkit-scrollbar-thumb {background-color: transparent;}
+
+/* header */
+header{position: fixed; bottom: calc(100vw * 20 / 1920); width: 100%; display: flex; justify-content: center; opacity: 1; transition: opacity 0.3s ease-in-out; z-index: 10;}
+#header.hidden { opacity: 0;}
+header .menu{background-color: rgba(0, 0, 0, 0.1); backdrop-filter: blur(20px); border-radius: calc(100vw * 20 / 1920); width: calc(100vw  * 665 / 1920); display: flex; justify-content: center; align-items: center; font-size: calc(100vw * 18 / 1920); font-weight: 700;}
+header .menu span{font-size: calc(100vw * 12 / 1920); font-weight: 700;}
+header .menu li{padding: calc(100vw * 16 / 1920) calc(100vw * 30 / 1920); text-align: left; filter: invert(50%);}
+header .menu li a{position: relative; color: #404042;}
+header .menu li a::after {content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: calc(100vw * 2 / 1920); background-color: #404042; transform: scaleX(0); transition: transform 0.3s ease-in-out;}
+header .menu li a:hover::after {transform: scaleX(1);}
+
+#home{position: fixed; width: 100%; height: calc(100vw * 1080 / 1920); background-image: url(../img/Frame\ 39.png); background-size: 100%; background-repeat: no-repeat;}
+#home p{position: absolute; top: calc(100vw * 750 / 1920); left: calc(100vw * 640 / 1920); font-size: calc(100vw * 60 / 1920); font-weight: 700; color: #98999A;}
