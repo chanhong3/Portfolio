@@ -2,38 +2,219 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <title>chanhong</title>
+    <link href="img//logo.png" rel="shortcut icon" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="css/rest.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header id="header">
-        <div class="logo"><img src="img/Asset 1@2x.png" alt=""></div>
-        <div class="menu">
-            <ul class="menu_list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">information</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <!-- intro -->
+    <div class="loader">
+        <div class="intro pretendard">
+            <p class="title">Product<br>Portfolio</p>
+            <p class="date">2023</p>
+            <div class="line"></div>
+            <p class="name">CHANHONG LIM</p>
         </div>
+    </div>
+
+    <!-- header -->
+    <header id="header">
+        <ul class="menu pretendard">
+            <li id="home_btn"><a href="#"><span>01</span><br>HOME</a></li>
+            <li id="introduction_btn"><a href="#"><span>02</span><br>INTRODUCTION</a></li>
+            <li id="directionality_btn"><a href="#"><span>03</span><br>DIRECTIONALITY</a></li>
+            <li id="product_btn"><a href="#"><span>04</span><br>PRODUCT</a></li>
+        </ul>
     </header>
+
     <div id="wrap">
-        <section id="sec_1"><img src="img/Frame 39.png" alt=""></section>
-        <section id="sec_2"><p>공사중입니다. <br> 다음에 다시 방문해주세요</p></section>
-        <section></section>
-        <section id="sec_4"><img src="img/infor.jpg" alt=""></section>
+        <!-- home -->
+        <section id="home">
+            <article class="pretendard">
+                <p class="sub">Hello, welcome to my portfolio!</p>
+                <p class="title">I’m Chanhong</p>
+                <p class="text">안녕하세요! <span>가능성</span>을 디자인하는 임찬홍입니다. <br>
+                    자유롭게 시시각각 변하는 시대 처럼 저 또한<br>
+                    많은 의미를 나타내고, 흐름에 맞춰 변해갑니다.</p>
+                <div class="vertical">
+                    <p class="up">A POSSIBILITY</p>
+                    <div class="line"></div>
+                    <p class="down">DESIGNER</p>
+                </div>
+            </article>
+        </section>
+
+        <div class="clear"></div>
+
+        <!-- introduction -->
+        <section id="introduction">
+            <article class="pretendard">
+                <div class="title">
+                    <p>먼저,<br>
+                        <span>제 소개</span> 입니다.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="profile1">
+                    <div class="image"><img src="img/profile.png" alt="profile"></div>
+                    <div class="name"><p>임찬홍</p></div>
+                    <div class="line"></div>
+                    <ul>
+                        <li><span>LIM CHANHONG</span></li>
+                        <li><span>2003. 03. 11</span></li>
+                        <li><span>010-2949-3011</span></li>
+                        <li><span>chanhong0311@gmail.com</span></li>
+                    </ul>
+                </div>
+                <div class="profile2">
+                    <div class="title2"><p>학력사항<span>Educational background</span></p></div>
+                    <div class="educational">
+                        <ul class="school">
+                            <li><span>서울디자인고등학교</span></li>
+                            <li><span>계원예술대학교</span></li>
+                            <li><span>홍익대학교 (세종)</span></li>
+                        </ul>
+                        <ul class="department">
+                            <li><span>패션액세서리디자인과 졸업</span></li>
+                            <li><span>디지털미디어디자인과 졸업</span></li>
+                            <li><span>디자인컨버전스학부 (입학 예정)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile3">
+                    <div class="title3"><p>프로그램 능력<span>Program skills</span></p></div>
+                    <div class="skills">
+                        <ul class="adobe">
+                            <li class="sub"><span>Adobe</span></li>
+                            <li><span>Photoshop</span></li>
+                            <li><span>Illustrator</span></li>
+                            <li><span>InDesign</span></li>
+                            <li><span>After Effects</span></li>
+                            <li><span>Premiere Pro</span></li>
+                        </ul>
+                        <ul class="3d">
+                            <li class="sub"><span>3D Rhino</span></li>
+                            <li><span>3D Max</span></li>
+                            <li><span>Unity</span></li>
+                            <li><span>Cinema 4D</span></li>
+                        </ul>
+                        <ul class="web">
+                            <li class="sub"><span>Web</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile4">
+                    <div class="title4"><p>자격정보<span>Qualification information</span></p></div>
+                    <div class="qualification">
+                        <ul class="certificate">
+                            <li><span>GTQ 포토샵 1급</span></li>
+                            <li><span>GTQ 일러스트 1급</span></li>
+                            <li><span>컴퓨터그래픽스운용기능사</span></li>
+                            <li><span>ITQ 엑셀 1급</span></li>
+                            <li><span>운전면허 1종 보통</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile5">
+                    <div class="title5"><p>경력사항<span>Career</span></p></div>
+                    <div class="career">
+                        <ul class="work">
+                            <li class="sub"><span class="company">Ch2p 액세서리 브랜드</span><span>2019. 03 - 2022. 02</span></li>
+                            <li><span>- 액세서리 및 제품 디자인</span></li>
+                            <li><span>- 사진 보정</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- directionality -->
+        <section id="directionality">
+            <article class="pretendard">
+                <div class="cover">
+                    <div class="bg"></div>
+                    <div class="gradient"></div>
+                </div>
+                <div class="title">
+                    <p>앞으로의,<br>
+                        <span>방향성</span> 입니다.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="motive">
+                    <p class="sub">동기</p>
+                    <div class="line"></div>
+                    <p class="text">현대의 제품 산업은 인간의 정서, 가치관, 여건, 능력 등을 드러낼 수단으로 활용 <br>
+                        영역이 확장되며 포괄적 이해와 접근이 필요한 분야가 되었습니다. <br>
+                        <br>
+                        또한, 제품 산업 환경은 시시각각 변하고 소비자의 니즈는 매우 복잡해져, 제품디자인 <br>
+                        직종 종사자는 관련 지식과 기술 습득을 통해 시장과 소비자의 요구에 부응해야 합니다. <br>
+                        즉 제품 개발을 위한 착안 능력, 변화에 민감하게 반응하는 대응 능력, 트렌트 분석 및 <br>
+                        예측 능력 등 여러 분야를 아우르는 통섭과 융합 능력이 필요합니다. <br>
+                        이런 생각은 진로에 대한 확신을 주었고 더 공부해야 할 이유가 되었습니다.</p>
+                </div>
+                <div class="goals">
+                    <img src="img/directionality_study.png" alt="">
+                    <div class="goals_text">
+                        <p class="sub">연구와 목표</p>
+                        <div class="line"></div>
+                        <p class="text">실무 능력을 향상 시키기 위해 소품 및 브랜드 리디자인에 관하여 공부도 하며 프로젝트를  <br>
+                            진행하였습니다.
+                            외주 작업을 받으며 사용자들이 원하는 디자인을 연구하였습니다. <br>
+                            동시에 시장 및 제품 관련 정보를 수집하고 분석해 앞으로 주류가 될 트렌드를 예측하는 <br>
+                            안목을 키워나갔고, 여러 자격증을 취득하고 제품 디자인에 활용하며 디자인 감각과 <br>
+                            표현 기법을 높이는 훈련에 집중하였습니다. <br>
+                            <br>
+                            저의 목표는 사람과 생활관계를 이해해 우리에게 양질의 생활을 제공해줄 수 있는 디자인 <br>
+                            하는 것이 목표입니다. </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- product -->
+        <section id="product">
+            <article class="pretendard">
+                <div class="title">
+                    <p><span>제품소개</span> 입니다.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="img_box">
+                    <p class="sub">Product</p>
+                    <ul>
+                        <li><img src="img/imgs.png" alt="imgs"></li>
+                        <!-- 추후에 각각 넣을 것. -->
+                    </ul>
+                    <div class="btn">
+                        <button class="pretendard"><a href="product.html">MORE</a></button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- footer -->
         <footer>
-            <h4>트렌드를 주도하는 디자인 산업의 
-                핵심 인력이 되겠습니다.</h4>
-            <p>T: 010-2949-3011 <br>
-            E: chanhong0311@gmail.com</p>
+            <div class="end pretendard">
+                <p>thanks!</p>
+                <div class="line"></div>
+            </div>
+            <ul class="icon">
+                <li id="icon1_btn"><a href="#"><img src="img/icon1.png" alt="call"></a></li>
+                <li><a href="https://www.instagram.com/hhhong_0311/" target="_blank"><img src="img/icon2.png" alt="instagram"></a></li>
+                <li><a href="https://github.com/chanhong3" target="_blank"><img src="img/icon3.png" alt="github"></a></li>
+            </ul>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <br>
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
         </footer>
     </div>
-    
     <script src="js/header.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/intro.js"></script>
 </body>
 </html>
