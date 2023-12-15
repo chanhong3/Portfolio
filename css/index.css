@@ -92,7 +92,7 @@ header .menu li a:hover::after {transform: scaleX(1);}
 #directionality .motive{position: absolute; top: calc(100vw * 690 / 1920);}
 #directionality .motive .sub{font-size: calc(100vw * 36 / 1920); font-weight: 700;}
 #directionality .motive .line{height: calc(100vw * 12 / 1920); width: calc(100vw * 63 / 1920); border-bottom: solid calc(100vw * 2 / 1920) #F1F3F2; margin-bottom: calc(100vw * 50 / 1920);}
-#directionality .motive .text{font-size: calc(100vw * 24 / 1920); font-weight: 300; line-height: calc(100vw * 29 / 1920);}
+#directionality .motive .text{font-size: calc(100vw * 22 / 1920); font-weight: 300; line-height: calc(100vw * 29 / 1920);}
 
 #directionality .goals{position: absolute; top: calc(100vw * 1340 / 1920); display: flex;}
 #directionality .goals img{width: calc(100vw * 600 / 1920);}

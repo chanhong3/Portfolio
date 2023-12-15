@@ -18,11 +18,28 @@ body::-webkit-scrollbar-thumb {background-color: transparent;}
 header{position: fixed; bottom: calc(100vw * 20 / 1920); width: 100%; display: flex; justify-content: center; opacity: 1; transition: opacity 0.3s ease-in-out; z-index: 10;}
 #header.hidden { opacity: 0;}
 header .menu{background-color: rgba(0, 0, 0, 0.1); backdrop-filter: blur(20px); border-radius: calc(100vw * 20 / 1920); width: calc(100vw  * 665 / 1920); display: flex; justify-content: center; align-items: center; font-size: calc(100vw * 18 / 1920); font-weight: 700;}
-header .menu span{font-size: calc(100vw * 12 / 1920); font-weight: 700;}
 header .menu li{padding: calc(100vw * 16 / 1920) calc(100vw * 30 / 1920); text-align: left; filter: invert(50%);}
 header .menu li a{position: relative; color: #404042;}
 header .menu li a::after {content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: calc(100vw * 2 / 1920); background-color: #404042; transform: scaleX(0); transition: transform 0.3s ease-in-out;}
 header .menu li a:hover::after {transform: scaleX(1);}
 
-#home{position: fixed; width: 100%; height: calc(100vw * 1080 / 1920); background-image: url(../img/Frame\ 39.png); background-size: 100%; background-repeat: no-repeat;}
-#home p{position: absolute; top: calc(100vw * 750 / 1920); left: calc(100vw * 640 / 1920); font-size: calc(100vw * 60 / 1920); font-weight: 700; color: #98999A;}
+/* home */
+#home{position: relative; width: 100%; height: calc(100vw * 2300 / 1920); padding: 0 calc(100vw * 200 / 1920)}
+#home .title{font-size: calc(100vw * 70 / 1920); font-weight: 900; margin-bottom: calc(100vw * 120 / 1920);}
+#home .list_l{position: absolute; top: calc(100vw * 165 / 1920);}
+#home .list_r{position: absolute; top: calc(100vw * 160 / 1920); right: calc(100vw * 200 / 1920);}
+#home .products{width: calc(100vw * 740 / 1920); display: flex; margin-bottom: calc(100vw * 60 / 1920); border-top: solid 2px #404042;}
+#home .products .num{margin-top: calc(100vw * 20 / 1920); width: calc(100vw * 140 / 1920); font-size: calc(100vw * 36 / 1920); font-weight: 700;}
+#home .products .work{margin-top: calc(100vw * 32 / 1920); width: calc(100vw * 270 / 1920);font-size: calc(100vw * 24 / 1920); font-weight: 400;}
+#home .products .image{margin-top: calc(100vw * 20 / 1920); width: calc(100vw * 330 / 1920);}
+#home .products .image img{width: 100%;}
+
+.btn{position: relative; width: 100%; text-align: center; top: calc(100vw * 2150 / 1920); ;}
+.btn button{ background-color: #F1F3F2; color: #404042; padding: calc(100vw * 8 / 1920) calc(100vw * 22 / 1920); border: solid 2px #404042; font-size: calc(100vw * 18 / 1920); font-weight: 400; transition: background-color 0.3s ease, color 0.3s ease;}
+.btn button:hover {background-color: #DFDFDF; color: #404042;}
+
+/* footer */
+footer{position: relative; width: 100%; height: calc(100vw * 380 /1920); background-color: #404042;color: #F1F3F2;}
+footer .icon{position: absolute; top: calc(100vw * 80 / 1920); width: 100%; display: flex; justify-content: center;}
+footer .icon img{width: calc(100vw * 60 / 1920); margin: 0 calc(100vw * 20 / 1920); filter: invert(100%);}
+footer .text{position: absolute; top: calc(100vw * 200 / 1920); width: 100%; text-align: center; font-size: calc(100vw * 18 / 1920); font-weight: 400;}
